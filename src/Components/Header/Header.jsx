@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div>
             <NavBar></NavBar>
-            <Banner></Banner>
+            
         </div>
     );
 };

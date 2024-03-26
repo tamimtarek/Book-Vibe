@@ -1,0 +1,81 @@
+[
+    {
+      "id": "1",
+      "bookName": "The Dating Play Book For",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/7tqRLVX/pngwing-1-1.png",
+      "review": "A timeless classic that portrays the decadence of the Jazz Age and explores the elusive American Dream. Fitzgerald's prose mesmerizes with its elegance and depth. The characters are richly drawn, and the themes resonate with readers, making it a must-read for all time.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance", "Drama"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": "2",
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/R27jCR7/kindpng-4945926-1.png",
+      "review": "Harper Lee's masterpiece confronts racial injustice and moral growth in a Southern town. Through the eyes of Scout Finch, we witness the courage of Atticus Finch in defending Tom Robinson. The narrative captivates with its poignant portrayal of humanity's strengths and weaknesses.",
+      "totalPages": 324,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Classic", "Legal Drama", "Coming-of-Age"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": "3",
+      "bookName": "George Orwell",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/hCZSTZy/kindpng-1064993.png",
+      "review": "Orwell's dystopian warning against totalitarianism remains chillingly relevant. In a world of surveillance and propaganda, Winston Smith rebels against Big Brother. Themes of oppression, manipulation, and the loss of individuality resonate deeply. '1984' serves as a cautionary tale, urging vigilance against threats to freedom.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political", "Social Commentary"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": "4",
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/NpF0cdr/kindpng-7318921.png",
+      "review": "Holden Caulfield's journey through teenage angst and alienation captivates readers. Salinger's portrayal of adolescence is raw and authentic. Through Holden's voice, we confront themes of identity, alienation, and the search for meaning. 'The Catcher in the Rye' remains a timeless exploration of youth and society.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Classic", "Teen"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": "5",
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/8YF8zX3/kindpng-81724-1.png",
+      "review": "Austen's comedy of manners delights with its wit and charm. The spirited Elizabeth Bennet and the proud Mr. Darcy navigate love and society's expectations. With its incisive social commentary and sparkling dialogue, 'Pride and Prejudice' endures as a timeless romance and satire of class.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Romance", "Classic", "Satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": "6",
+      "bookName": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/61s0ymJ/kindpng-5624060-1.png",
+      "review": "Tolkien's epic fantasy masterpiece transports readers to Middle-earth. Frodo Baggins embarks on a perilous quest to destroy the One Ring and vanquish Sauron. With rich world-building and unforgettable characters, 'The Lord of the Rings' is a timeless saga of courage, friendship, and the battle between good and evil.",
+      "totalPages": 1178,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Epic", "Adventure", "High Fantasy"],
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1954
+    }
+  ]
+  
