@@ -1,6 +1,6 @@
 
 
-const ReadBook = ({ list }) => {
+const WishList = ({ list }) => {
     const { author, bookName, category, image, publisher, rating, review, tags, yearOfPublishing, totalPages } = list;
     return (
         <div className="flex m-auto lg:w-[1150px] border p-3  w-full gap-5 mt-5 rounded-md">
@@ -40,4 +40,4 @@ const ReadBook = ({ list }) => {
     );
 };
 
-export default ReadBook;
+export default WishList;

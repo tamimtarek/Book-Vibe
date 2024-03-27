@@ -1,21 +1,30 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBooks } from "../../Utils/localStorage";
+import { getStoredBooks, saveBooks } from "../../Utils/localStorage";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { saveWishBooks } from "../../Utils/wishlist";
 
 
 const BookDetails = () => {
     const books = useLoaderData();
-    const {id} = useParams();
-    const book = books.find(book => book.id == id);
+    const { id } = useParams();
+    const book = books.find((book) => book.id == id);
     const { author, bookName, category, image, publisher, rating, review, tags, yearOfPublishing, totalPages } = book;
-
+    
     const handleReadBooks = () => {
         saveBooks(id);
-        toast('Read');
+        toast('Successfully Readbooks');
     }
 
-    console.log(book);
+    const handleWishlist = () => {
+        const saves = getStoredBooks(id);
+        const exist = saves.find(save => save ===id);
+        if(!exist){
+            saveWishBooks(id);
+            toast("Successfully added to wishlist")
+        }
+        else{toast.warning("Already Readed!!!!")}
+    }
     return (
         <div className="lg:w-[1280px] m-auto grid lg:grid-cols-2 gap-1 mt-9 p-5">
             <div>
@@ -47,7 +56,7 @@ const BookDetails = () => {
                 </div>
                 <div className="space-x-6">
                     <button onClick={handleReadBooks} className="btn w-[100px]">Read</button>
-                    <button className="btn btn-info text-white w-[100px]">Wishlist</button>
+                    <button onClick={handleWishlist} className="btn btn-info text-white w-[100px]">Wishlist</button>
                 </div>
             </div>
             <ToastContainer></ToastContainer>
