@@ -8,6 +8,8 @@ import ErrorPage from './Components/ErrorPage/ErrorPage';
 import BookDetails from './Components/BookDetails/BookDetails';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import PageToRead from './Components/PageToRead/PageToRead';
+import Review from './Components/Review/Review';
+import Ratings from './Components/Ratings/Ratings';
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         loader: () => fetch("/data.json"),
         element: <BookDetails></BookDetails>,
       },
+      {
+        path: "/review",
+        element: <Review></Review>
+      },
+      {
+        path: "/rating",
+        element: <Ratings></Ratings>
+      }
     ]
   },
 ]);

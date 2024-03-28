@@ -22,6 +22,8 @@ const NavBar = () => {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/booklisted">Listed Books</NavLink></li>
                     <li><NavLink to="/pagetoread">Pages to Read</NavLink></li>
+                    <li><NavLink to="/review">Review</NavLink></li>
+                    <li><NavLink to="/rating">Book Rating</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end lg:space-x-3">
