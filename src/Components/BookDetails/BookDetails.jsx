@@ -2,7 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { getStoredBooks, saveBooks } from "../../Utils/localStorage";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import {  saveWishBooks } from "../../Utils/wishlist";
+import {  getStoredWishBooks, saveWishBooks } from "../../Utils/wishlist";
 
 
 const BookDetails = () => {
@@ -26,13 +26,20 @@ const BookDetails = () => {
     const handleWishlist = () => {
         const saves = getStoredBooks(id);
         const exist = saves.find(save => save ===id);
+        const wishs = getStoredWishBooks(id);
+        const isWish = wishs.find(wish => wish ===id);
         if(!exist){
-            saveWishBooks(id);
+            if(!isWish){
+                saveWishBooks(id);
             toast("Successfully added to wishlist")
+            }
+            else{
+                    toast.warning("Already Added To Wishlist!!!")
+                }
         }
         else{
-            toast.warning("Already Read!!!")
-        }
+                toast.warning("Already Added To Read!!!")
+            }
     }
     return (
         <div className="lg:w-[1280px] m-auto grid lg:grid-cols-2 gap-1 mt-9 p-5">
