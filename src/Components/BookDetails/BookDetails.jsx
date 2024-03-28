@@ -12,8 +12,15 @@ const BookDetails = () => {
     const { author, bookName, category, image, publisher, rating, review, tags, yearOfPublishing, totalPages } = book;
     
     const handleReadBooks = () => {
-        saveBooks(id);
-        toast('Successfully Readbooks');
+        const saves = getStoredBooks(id);
+        const exist = saves.find(save => save ===id);
+        if(!exist){
+            saveBooks(id);
+            toast('Successfully Read');
+        }
+        else{
+            toast.warning("Already Read!!!")
+        }
     }
 
     const handleWishlist = () => {
@@ -23,7 +30,7 @@ const BookDetails = () => {
             saveWishBooks(id);
             toast("Successfully added to wishlist")
         }
-        else{toast.warning("Already Readed!!!!")}
+        else{toast.warning("Already Read!!!!")}
     }
     return (
         <div className="lg:w-[1280px] m-auto grid lg:grid-cols-2 gap-1 mt-9 p-5">
